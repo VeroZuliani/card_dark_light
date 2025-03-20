@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #dfa4ba;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*Modo Oscuro*/
+.mode-dark{
+    color: #595858;
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+}
+
+
+
+.switch{
+    position: relative;
+    display: inline-block; 
+    width: 50px;
+    height: 25px;
+}
+
+.switch input{
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #595858;
+    opacity: 50%;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.slider::before{
+    position: absolute;
+    content: "";
+    height: 18px;
+    width: 18px;
+    background-color: #f3f3f3;
+    border-radius: 50%;
+    top: 2.5px;
+    left: 4px;
+    transition: 0.5s;
+}
+
+input:checked + .slider{
+    background-color: #a00e59;
+}
+
+input:checked + .slider::before{
+    transform: translate(26px);
+}
+
+
+
+/*Card*/
+.container{
+    width: 35rem;
+    height: 20rem;
+    position: relative;
+}
+
+.img-profile{
+    position: absolute;
+    left: 0;
+    top: 2.5rem;
+    width: 12rem;
+    z-index: 1;
+}
+
+.profile{
+    width: 30rem;
+    height: 20rem;
+    position: absolute;
+    right: 0; 
+    background-color: #ffff;
+}
+
+.profile-data{
+    margin-left: 8rem;
+    margin-top: 4rem;
+}
+
+i{
+    color: #f05fab;
+    width: 2rem;
+    height: 2rem;
+}
+
+.vr{
+    height: 2rem;
+    margin-right: 1rem;
+}
+
+.p{
+    color: #595858;
+}
