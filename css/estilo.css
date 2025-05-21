@@ -135,3 +135,95 @@ i{
 .p{
     color: #595858;
 }
+
+
+
+@media(max-width:320px){
+    .profile{
+        width: 16rem !important;
+    }
+    .img-profile{
+        width: 9rem;
+    }
+    .title{
+        font-size: 1.2rem !important;
+    }
+    .subtitle{
+        font-size: 1rem !important;
+    }
+    .vr{
+        height: 1.5rem;
+        margin-right: 0.8rem;
+    }
+    p{
+        font-size: 0.9rem !important;
+    }
+}  
+
+@media(max-width:480px){
+    .container{
+        width: 90%;
+        height: auto;
+    }
+    .img-profile{
+        position: relative;
+        display: block;
+        margin: auto;
+        top:5rem;
+    }
+    .profile{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 2rem;
+    }
+    .profile-data{
+        margin: 0;
+        padding: 4rem;
+    }
+}
+
+@media(min-width:1920px){
+    .container{
+        width: 50rem; 
+        height: 28rem; 
+    }
+    .img-profile{
+        width: 16rem; 
+        height: 20.8rem;
+        top: 4rem; 
+        left: 2rem;
+    }
+    .profile{
+        width: 40rem; 
+        height: 28rem; 
+    }
+    .profile-data{
+        margin-left: 10rem; 
+        margin-top: 6rem; 
+    }
+    .title{
+        font-size: 2.5rem !important; 
+    }
+    .subtitle{
+        font-size: 2rem !important; 
+        margin-bottom: 1rem !important;
+    }
+    .profile-data div{
+        margin-bottom: 0.3rem;
+    }
+    i{ 
+        width: 2.5rem;
+        height: 2.5rem;
+        font-size: 1.8rem; 
+    }
+    .vr{
+        height: 2.9rem;
+        margin: 0.5rem 1.5rem 0 0.5rem;
+    }
+    p{ 
+        font-size: 1.2rem; 
+        margin-top: 0.9rem;
+    }
+}
